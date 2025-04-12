@@ -1,0 +1,109 @@
+<!Doctype html>
+<html>
+    <head><title>My contacts</title></head>
+    <body>
+        <style>
+            button {
+                text-decoration: none;
+                color: black;.
+            }
+            
+            .name {
+    display: block;
+    border-style: none #ccc;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-left: 525px;
+    border-radius: 15px;
+    background-color: grey;
+}
+
+h1 {
+    font-family: arial;
+    padding-left: 500px;
+    background-color: grey;
+}
+
+.email {
+    display: block;
+    border-style: none #ccc; 
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: auto;
+    text-align: center;
+    margin-left: 525px;
+    border-radius: 15px;
+    background-color: grey;
+}
+
+.message {
+    display: block;
+    border-style: none;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: auto;
+    text-align: center;
+    margin-left: 525px;
+    border-radius: 15px;
+    background-color: grey;
+      
+}
+    
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: white;
+}
+
+.Send {
+    padding: 0.7rem 1.5rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 590px;
+    transition: transform 0.5s ease;
+}
+
+.Send:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.Send:active {
+    transform: scale(-1.0);
+    opacity: 0.4;
+}
+
+
+        </style>
+        <a href="portfolio.html">
+            <button>Back to Home</button>
+        </a>
+        <h1>Contact Me Here</h1>
+        <form action="https://formsubmit.co/351e198dcec99a4935915757bd1b37f4" method="POST">
+            <input class="name" type="text" name="name" placeholder="Your Name" required>
+            <input class="email" type="email" name="email" placeholder="Your Email" required>
+            <textarea class="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            
+            <!-- Optional: prevent spam -->
+            <input type="hidden" name="_captcha" value="false">
+            
+            <!-- Optional: redirect after submit -->
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+            
+            <button type="submit">Send</button>
+          </form>
+    </body>
+</html>
